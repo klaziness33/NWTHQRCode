@@ -35,6 +35,7 @@ const ScannerScreen = props => {
 };
 
 const success = (e, {navigation}) => {
+  // success
   let callback = navigation.getParam('onResult');
   callback(e.data);
   navigation.goBack();
